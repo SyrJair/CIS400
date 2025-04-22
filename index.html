@@ -3,45 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ResQue Prototype</title>
-
+  <title>ResQue Project Overview</title>
+  
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 
   <style>
+    /* Base Styles */
     body {
       margin: 0;
       padding: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
+      background-color: #f3e6f9; /* Light purple mauve background */
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      justify-content: flex-start;
       text-align: center;
+      color: white; /* White text color */
     }
 
-    h1 {
-      color: #2c3e50;
-      margin-bottom: 20px;
+    h1, h2 {
+      color: white; /* White color for headings */
     }
 
+    section {
+      width: 80%;
+      max-width: 1000px;
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Section Titles */
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #7d3c98; /* Purple mauve for titles */
+    }
+
+    .section-content {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: white; /* White text color for content */
+    }
+
+    /* Key Features Section */
+    .features-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .features-list li {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      color: white;
+    }
+
+    /* Buttons and Links */
+    a {
+      color: #7d3c98; /* Purple for links */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #5c2c6c; /* Darker purple on hover */
+    }
+
+    /* Figma Embed */
     iframe {
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      height: 600px;
+      border: none;
       border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>✨ ResQue Interactive Prototype ✨</h1>
+  <header>
+    <h1>✨ ResQue Project Overview ✨</h1>
+  </header>
 
-  <iframe
-    width="800"
-    height="450"
-    src="https://embed.figma.com/design/4dOANw2Kdvu3RoLG86kWrB/ResQue-For-Real?node-id=0-1&m=dev&embed-host=share"
-    allowfullscreen>
-  </iframe>
+  <!-- Project Overview Section -->
+  <section id="overview">
+    <h2 class="section-title">Project Overview</h2>
+    <div class="section-content">
+      <p>Natural disasters — such as hurricanes, earthquakes, floods, and wildfires — can cause massive disruption, making communication and coordination extremely difficult. Traditional emergency services often become overwhelmed, and many individuals find themselves isolated without clear, real-time information about where to find help or how to offer assistance.</p>
+      
+      <p>In these critical moments, access to trustworthy, location-specific information can mean the difference between life and death. However, during emergencies, misinformation spreads easily, official resources can be delayed, and vulnerable populations are often left without support.</p>
+
+      <p>There is a significant gap between people who urgently need help and the aid resources available during disasters. Real-time updates and verified information are often scattered across different platforms or hard to access.</p>
+
+      <p>Individuals may not know where the nearest shelter, medical assistance, or food supply is located. People who want to offer help have no simple, safe way to connect with those in need.</p>
+
+      <p><strong>ResQue</strong> addresses this problem by creating a centralized, real-time, and community-driven platform that connects individuals enabling fast, reliable aid and communication when it matters most.</p>
+    </div>
+  </section>
+
+  <!-- Goals Section -->
+  <section id="goals">
+    <h2 class="section-title">Goals</h2>
+    <div class="section-content">
+      <ul class="features-list">
+        <li>Facilitate real-time communication between people.</li>
+        <li>Provide trustworthy, location-based updates about shelters, medical aid, and safety resources.</li>
+        <li>Reduce confusion and misinformation during disaster scenarios.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Target Users Section -->
+  <section id="target-users">
+    <h2 class="section-title">Target Users</h2>
+    <div class="section-content">
+      <p><strong>Individuals affected by natural disasters:</strong><br>
+      People who need quick access to shelters, food, medical aid, or safety updates.</p>
+
+      <p><strong>Local businesses and volunteers:</strong><br>
+      Those offering resources (like supplies, shelter, or transportation) who need a platform to connect safely with people in need.</p>
+    </div>
+  </section>
+
+  <!-- Key Features Section -->
+  <section id="key-features">
+    <h2 class="section-title">Key Features</h2>
+    <div class="section-content">
+      <ul class="features-list">
+        <li><strong>Interactive Map with Real-Time GPS:</strong> Displays nearby shelters, aid stations, verified help offers, and real-time SOS alerts based on user location.</li>
+        <li><strong>Live Camera Story Submissions:</strong> Users can submit real-time photos or videos (no uploads from the device library) with metadata to ensure authenticity.</li>
+        <li><strong>Account System:</strong> Allows individuals, businesses, and organizations to create trusted profiles, boosting the credibility of shared information.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Figma Embed Section -->
+  <section id="figma-embed">
+    <h2 class="section-title">View Full Figma Design</h2>
+    <div class="section-content">
+      <iframe src="https://embed.figma.com/design/4dOANw2Kdvu3RoLG86kWrB/ResQue-For-Real?node-id=0-1&m=dev&embed-host=share" allowfullscreen></iframe>
+    </div>
+  </section>
+
 </body>
 </html>
+
