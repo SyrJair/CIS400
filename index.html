@@ -4,27 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ResQue Project Overview</title>
-  
-  <!-- Google Font -->
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 
   <style>
-    /* Base Styles */
     body {
       margin: 0;
       padding: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f3e6f9; /* Light purple mauve background */
+      background-color: #f3e6f9;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
       text-align: center;
-      color: white; /* White text color for global text */
+      color: white;
     }
 
-    h1, h2 {
-      color: white; /* White color for headings */
+    h1 {
+      margin: 40px 0 20px;
     }
 
     section {
@@ -32,81 +29,82 @@
       max-width: 1000px;
       margin-bottom: 40px;
       padding: 20px;
-      background-color: white; /* White background for each section */
+      background-color: white;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
     }
 
-    /* Section Titles */
     .section-title {
       font-size: 2rem;
       margin-bottom: 10px;
       font-weight: bold;
-      color: #7d3c98; /* Purple mauve for titles */
+      color: #7d3c98;
+      text-align: center;
     }
 
     .section-content {
       font-size: 1.1rem;
       line-height: 1.6;
-      color: black; /* Change text color to black for content */
+      color: black;
     }
 
-    /* Key Features Section */
-    .features-list {
-      list-style-type: none;
-      padding: 0;
+    ul.features-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: black;
     }
 
-    .features-list li {
-      font-size: 1.1rem;
-      margin: 10px 0;
-      color: black; /* Black text for feature list */
-    }
-
-    /* Buttons and Links */
     a {
-      color: #7d3c98; /* Purple for links */
-      text-decoration: none;
+      color: #7d3c98;
       font-weight: bold;
+      text-decoration: none;
     }
 
     a:hover {
-      color: #5c2c6c; /* Darker purple on hover */
+      color: #5c2c6c;
     }
 
-    /* Figma Embed */
     iframe {
       width: 100%;
       height: 600px;
       border: none;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .heuristic-item {
+      margin-bottom: 20px;
+    }
+
+    .heuristic-item strong {
+      color: #7d3c98;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>✨ ResQue Project Overview ✨</h1>
   </header>
 
-  <!-- Project Overview Section -->
+  <!-- Project Overview -->
   <section id="overview">
     <h2 class="section-title">Project Overview</h2>
     <div class="section-content">
-      <p>Natural disasters — such as hurricanes, earthquakes, floods, and wildfires — can cause massive disruption, making communication and coordination extremely difficult. Traditional emergency services often become overwhelmed, and many individuals find themselves isolated without clear, real-time information about where to find help or how to offer assistance.</p>
-      
-      <p>In these critical moments, access to trustworthy, location-specific information can mean the difference between life and death. However, during emergencies, misinformation spreads easily, official resources can be delayed, and vulnerable populations are often left without support.</p>
-
-      <p>There is a significant gap between people who urgently need help and the aid resources available during disasters. Real-time updates and verified information are often scattered across different platforms or hard to access.</p>
-
-      <p>Individuals may not know where the nearest shelter, medical assistance, or food supply is located. People who want to offer help have no simple, safe way to connect with those in need.</p>
-
-      <p><strong>ResQue</strong> addresses this problem by creating a centralized, real-time, and community-driven platform that connects individuals enabling fast, reliable aid and communication when it matters most.</p>
+      <p>[Insert your full project overview here.]</p>
     </div>
   </section>
 
-  <!-- Goals Section -->
+  <!-- Goals -->
   <section id="goals">
     <h2 class="section-title">Goals</h2>
     <div class="section-content">
@@ -118,35 +116,110 @@
     </div>
   </section>
 
-  <!-- Target Users Section -->
+  <!-- Target Users -->
   <section id="target-users">
     <h2 class="section-title">Target Users</h2>
     <div class="section-content">
-      <p><strong>Individuals affected by natural disasters:</strong><br>
-      People who need quick access to shelters, food, medical aid, or safety updates.</p>
-
-      <p><strong>Local businesses and volunteers:</strong><br>
-      Those offering resources (like supplies, shelter, or transportation) who need a platform to connect safely with people in need.</p>
+      <p><strong>Individuals affected by natural disasters:</strong> People who need quick access to shelters, food, medical aid, or safety updates.</p>
+      <p><strong>Local businesses and volunteers:</strong> Those offering resources (like supplies, shelter, or transportation) who need a platform to connect safely with people in need.</p>
     </div>
   </section>
 
-  <!-- Key Features Section -->
+  <!-- Key Features -->
   <section id="key-features">
     <h2 class="section-title">Key Features</h2>
     <div class="section-content">
       <ul class="features-list">
-        <li><strong>Interactive Map with Real-Time GPS:</strong> Displays nearby shelters, aid stations, verified help offers, and real-time SOS alerts based on user location.</li>
-        <li><strong>Live Camera Story Submissions:</strong> Users can submit real-time photos or videos (no uploads from the device library) with metadata to ensure authenticity.</li>
-        <li><strong>Account System:</strong> Allows individuals, businesses, and organizations to create trusted profiles, boosting the credibility of shared information.</li>
+        <li><strong>Interactive Map with Real-Time GPS:</strong> Shows nearby shelters, aid stations, verified help offers, and SOS alerts.</li>
+        <li><strong>Live Camera Story Submissions:</strong> Real-time media capture with metadata (no gallery uploads) to ensure authenticity.</li>
+        <li><strong>Account System:</strong> Profiles for individuals, businesses, and organizations to boost trust and credibility.</li>
       </ul>
     </div>
   </section>
 
-  <!-- Figma Embed Section -->
+  <!-- Figma Embed -->
   <section id="figma-embed">
     <h2 class="section-title">View Full Figma Design</h2>
     <div class="section-content">
       <iframe src="https://embed.figma.com/design/4dOANw2Kdvu3RoLG86kWrB/ResQue-For-Real?node-id=0-1&m=dev&embed-host=share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Design Process -->
+  <section id="design-process">
+    <h2 class="section-title">Design Process</h2>
+    <div class="section-content">
+      <h3>Account System Design</h3>
+      <img src="/imgs/Account.jpg" alt="Account System Design" />
+
+      <h3>User Journey Map</h3>
+      <img src="/imgs/JourneyMap.png" alt="User Journey Map" />
+
+      <h3>Persona 1</h3>
+      <img src="/imgs/Persona1.1.png" alt="Persona 1" />
+
+      <h3>Persona 2</h3>
+      <img src="/imgs/Persona2.1.png" alt="Persona 2" />
+
+      <h3>PinPoint Location Feature</h3>
+      <img src="/imgs/PinPoint.jpg" alt="PinPoint Location" />
+
+      <h3>Story Submission Feature</h3>
+      <img src="/imgs/StorySubmission.jpg" alt="Story Submission" />
+    </div>
+  </section>
+
+  <!-- Heuristic Evaluation -->
+  <section id="heuristic-evaluation">
+    <h2 class="section-title">Heuristic Evaluation</h2>
+    <div class="section-content">
+      <div class="heuristic-item">
+        <strong>Visibility of System Status (Medium Severity)</strong>
+        <p>Users had no clear feedback on upload or approval status. We implemented a pending status update and added a confirmation after media was uploaded.</p>
+      </div>
+      <div class="heuristic-item">
+        <strong>Consistency and Standards (Low Severity)</strong>
+        <p>Different icons were used for similar actions. We made the icons bigger and clearly color-coded them.</p>
+      </div>
+      <div class="heuristic-item">
+        <strong>User Control and Freedom (Medium Severity)</strong>
+        <p>Users couldn’t cancel or retake media if the quality was poor. We added a cancel button after media was taken to offer more control.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection & Conclusion -->
+  <section id="reflection">
+    <h2 class="section-title">Reflection & Conclusion</h2>
+    <div class="section-content">
+      <h3>What Worked Well</h3>
+      <ul class="features-list">
+        <li>Staying focused on user needs made a huge difference.</li>
+        <li>Clear, simple navigation helped users act fast during emergencies.</li>
+        <li>Adding real-time feedback (like confirmation messages) increased user trust.</li>
+      </ul>
+
+      <h3>What Could Be Improved</h3>
+      <ul class="features-list">
+        <li><strong>More Diverse User Testing:</strong> Future testing should include older users, rural communities, and non-English speakers.</li>
+        <li><strong>Stronger Offline Support:</strong> Future versions should support offline map caching and pending help requests.</li>
+      </ul>
+
+      <h3>How Our Prototype Meets User Needs</h3>
+      <ul class="features-list">
+        <li><strong>Speed:</strong> Quick action buttons and live maps mean users find help fast.</li>
+        <li><strong>Trust:</strong> Verified accounts and instant feedback give users confidence in the information they see.</li>
+        <li><strong>Simplicity:</strong> Clear language and big buttons reduce confusion.</li>
+      </ul>
+
+      <h3>Impact of Heuristic Evaluation</h3>
+      <ul class="features-list">
+        <li>Improved Navigation: Clear menus and “Back to Map” buttons made it easier to move around.</li>
+        <li>Error Prevention: Adding cancel steps before posting reduced mistakes.</li>
+      </ul>
+
+      <h3>Final Thoughts</h3>
+      <p>Designing ResQue taught us that simple, clear, and trustworthy design is crucial when people are under stress. By applying HCI principles carefully, we created an app that could save lives by making it easier for people to connect, help, and stay safe during a disaster.</p>
     </div>
   </section>
 
